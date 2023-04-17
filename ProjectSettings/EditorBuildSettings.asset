@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SceneTest2.unity
+    path: Assets/Scenes/Eva's Scene/SceneTest2.unity
     guid: 2378c45f919dd45758b6e1d71746775a
   m_configObjects: {}
