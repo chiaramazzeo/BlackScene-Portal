@@ -23,8 +23,6 @@ public class ScrollDismiss : MonoBehaviour
 
     public UnityEvent onPanelDismissed;
 
-    public Vector3 startPos;
-
     private void Start()
     {
         scrollRect.onValueChanged.AddListener(OnScrollValueChanged);
@@ -32,8 +30,6 @@ public class ScrollDismiss : MonoBehaviour
         cachedTransform = panelToDismiss.GetComponent<RectTransform>();
         initialPoint = cachedTransform.position.y;
         stopLocation = ((cachedTransform.position.y / 2) * -1) + 200;
-
-        startPos = transform.position;
     }
 
     private void Update()
@@ -50,8 +46,6 @@ public class ScrollDismiss : MonoBehaviour
             {
                 scrollRect.velocity = Vector2.zero;
                 panelToDismiss.SetActive(false);
-
-                transform.position = startPos;
 
                 // Put any code here that you want to run after the panel has been dismissed.
                 Debug.Log("Panel has been dismissed.");
