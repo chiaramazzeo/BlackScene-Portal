@@ -12,10 +12,16 @@ public class ClickInputManager : MonoBehaviour
     public bool[] objectsCompleted;
     public int numberOfCompleted;
 
-    // Start is called before the first frame update
-    void Start()
+    private ActivatePanel activationScript;
+
+    public void Start()
     {
-        
+        activationScript = GetComponent<ActivatePanel>();
+    }
+
+    public void OnMouseDown()
+    {
+        activationScript.TransitionToNextPanel();
     }
 
     // Update is called once per frame
@@ -38,34 +44,19 @@ public class ClickInputManager : MonoBehaviour
                         {
                             case "GPS":
 
-                                objectName.SetText("GPS");
-                                objectDescription.SetText("GPS description. Bla bla bla");
-
-                                panelToAppear.SetActive(true);
-
-                                objectsCompleted[0] = true;
+                                activationScript.TransitionToNextPanel();
 
                                 break;
 
                             case "Mask":
 
-                                objectName.SetText("Surgeon");
-                                objectDescription.SetText("Mask description");
-
-                                panelToAppear.SetActive(true);
-
-                                objectsCompleted[1] = true;
+                                activationScript.TransitionToNextPanel();
 
                                 break;
 
                             case "Trophy":
 
-                                objectName.SetText("Trophy");
-                                objectDescription.SetText("Trophy description. Bla bla bla as well");
-
-                                panelToAppear.SetActive(true);
-
-                                objectsCompleted[2] = true;
+                                activationScript.TransitionToNextPanel();
 
                                 break;
                         }

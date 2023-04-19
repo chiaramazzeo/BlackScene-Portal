@@ -39,13 +39,15 @@ public class ScrollDismiss : MonoBehaviour
             // Continue moving the panel downwards until it's dismissed.
             Vector3 rectPosition = cachedTransform.position;
             rectPosition.y += cachedVelocity.y * 0.01f;
-            cachedTransform.position = rectPosition;
+            //cachedTransform.position = rectPosition;
 
             // Check if the panel is in position to be fully discarded.
             if (cachedTransform.position.y < stopLocation )
             {
                 scrollRect.velocity = Vector2.zero;
+                
                 panelToDismiss.SetActive(false);
+                panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
 
                 // Put any code here that you want to run after the panel has been dismissed.
                 Debug.Log("Panel has been dismissed.");
