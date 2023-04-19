@@ -343,6 +343,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDeactivate: {fileID: 664039996}
   objectToActivate: {fileID: 664039995}
+--- !u!114 &305549329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305549324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c5a876a515aee40ab083eaa61f42f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &305549330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305549324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a7fd32cf6cc3543ae27af29efc9064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToAppear: {fileID: 0}
+  objectName: {fileID: 0}
+  objectDescription: {fileID: 0}
+  numberOfCompletedText: {fileID: 0}
+  objectsCompleted: 
+  numberOfCompleted: 0
 --- !u!1001 &326363756
 PrefabInstance:
   m_ObjectHideFlags: 0
