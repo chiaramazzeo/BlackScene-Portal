@@ -5,10 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Eva's Scene/SceneTest2.unity
-    guid: 2378c45f919dd45758b6e1d71746775a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Carmen Scene/#1Scene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
