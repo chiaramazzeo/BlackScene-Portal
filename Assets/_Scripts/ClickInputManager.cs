@@ -27,7 +27,7 @@ public class ClickInputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogError(Input.touches);
+        Debug.Log(Input.touches);
         foreach (Touch touch in Input.touches)
         {
 
