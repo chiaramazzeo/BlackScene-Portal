@@ -30,6 +30,8 @@ namespace TS.PageSlider
 
         public Rect Rect { get { return ((RectTransform)transform).rect; } }
 
+        public List<PageContainer> pageContainers { get { return _pages; } }
+
         private PageScroller _scroller;
 
         #endregion
