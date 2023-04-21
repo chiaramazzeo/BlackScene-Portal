@@ -146,6 +146,20 @@ namespace TS.PageSlider
                 OnPageChangeStarted?.Invoke(_currentPage, _targetPage);
             }
         }
+
+        public void OverrideToPage(int page)
+        {
+            _targetNormalizedPosition = page * (1f / GetPageCount());
+            _moveSpeed = 100000000;
+
+            _targetPage = page;
+
+            if (_targetPage != _currentPage)
+            {
+                OnPageChangeStarted?.Invoke(_currentPage, _targetPage);
+            }
+        }
+
         private int GetPageCount()
         {
             var contentWidth = _scrollRect.content.rect.width;

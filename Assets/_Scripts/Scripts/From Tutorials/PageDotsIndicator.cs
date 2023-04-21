@@ -23,6 +23,8 @@ namespace TS.PageSlider
         [Header("Events")]
         public UnityEvent<int> OnDotPressed;
 
+        public List<PageDot> pageDots { get { return _dots; } }
+
         public bool IsVisible
         {
             get { return gameObject.activeInHierarchy; }
