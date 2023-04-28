@@ -68,13 +68,22 @@ public class ScrollDismiss : MonoBehaviour
             //panelToDismiss.SetActive(false); // hide the panel
         }
 
-        float deltaFromStart = Mathf.Abs(initialPoint - panelToDismiss.GetComponent<RectTransform>().position.y);
+        float deltaFromStart = initialPoint - panelToDismiss.GetComponent<RectTransform>().position.y;
+
+        if (deltaFromStart < 0f)
+        {
+            Vector3 position = panelToDismiss.GetComponent<RectTransform>().position;
+
+            scrollRect.velocity = Vector2.zero;
+            position.y = initialPoint;
+            panelToDismiss.GetComponent<RectTransform>().position = position;
+        }
+
         if (deltaFromStart > ThresholdToMove)
         {
             canTransition = true;
             cachedVelocity = scrollRect.velocity * Vector2.up;
         }
-
 
         Debug.Log($"Vector2Input: {value}, myPositionalDeltaFromStart: {deltaFromStart}  ");
     }
