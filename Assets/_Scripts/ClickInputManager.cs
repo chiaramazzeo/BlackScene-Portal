@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ClickInputManager : MonoBehaviour
 {
 
     public GameObject panelToAppear;
-    public TextMeshProUGUI objectName, objectDescription, numberOfCompletedText;
+    public TextMeshProUGUI objectName, objectDescription;
 
-    public bool[] objectsCompleted;
-    public int numberOfCompleted;
+    public List<Image> imagePanels;
+    public List<Sprite> panelImages;
 
     private ActivatePanel activationScript;
 
@@ -19,9 +20,21 @@ public class ClickInputManager : MonoBehaviour
         activationScript = GetComponent<ActivatePanel>();
     }
 
-    public void OnMouseDown()
+    public void ShowPanel()
     {
+        // Setup the images on the panels.
+        for (int i = 0; i < imagePanels.Count; i++)
+        {
+            imagePanels[i].sprite = panelImages[i];
+        }
+
+        // Show the panels.
         activationScript.TransitionToNextPanel();
+    }
+
+    private void OnMouseDown()
+    {
+        ShowPanel();
     }
 
     // Update is called once per frame
@@ -39,39 +52,9 @@ public class ClickInputManager : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
                     if (hit.collider != null)
-
-                        switch (hit.collider.name)
-                        {
-                            case "GPS":
-
-                                activationScript.TransitionToNextPanel();
-
-                                break;
-
-                            case "Mask":
-
-                                activationScript.TransitionToNextPanel();
-
-                                break;
-
-                            case "Trophy":
-
-                                activationScript.TransitionToNextPanel();
-
-                                break;
-                        }
-
-                    numberOfCompleted = 0;
-
-                    for (int i = 0; i < objectsCompleted.Length; i++)
                     {
-                        if(objectsCompleted[i] == true)
-                        {
-                            numberOfCompleted++;
-                        }
+                        ShowPanel();
                     }
-
-                    numberOfCompletedText.SetText(numberOfCompleted + " / " + objectsCompleted.Length);
                 }
 
                
@@ -79,6 +62,5 @@ public class ClickInputManager : MonoBehaviour
         }
 
     }
-
    
 }

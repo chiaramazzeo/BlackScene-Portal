@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.090011366, g: 0.090011366, b: 0.13557714, a: 1}
+  m_IndirectSpecularColor: {r: 0.09181083, g: 0.093374155, b: 0.1518588, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -785,6 +785,61 @@ PrefabInstance:
     - target: {fileID: 2299529126049358186, guid: 0de9f862c0f6f98409b016867357536c,
         type: 3}
       propertyPath: OnPageChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410067249}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Progress Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299529126049358188, guid: 0de9f862c0f6f98409b016867357536c,
+        type: 3}
+      propertyPath: onPanelDismissed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2299529126891624208, guid: 0de9f862c0f6f98409b016867357536c,
