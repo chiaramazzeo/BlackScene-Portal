@@ -13,6 +13,8 @@ public class ClickInputManager : MonoBehaviour
     public List<Image> imagePanels;
     public List<Sprite> panelImages;
 
+    public Animator animator = null;
+
     private ActivatePanel activationScript;
 
     public void Start()
@@ -30,6 +32,12 @@ public class ClickInputManager : MonoBehaviour
 
         // Show the panels.
         activationScript.TransitionToNextPanel();
+
+        if (animator != null)
+        {
+            animator.SetBool("Activate Panel", true);
+            animator.SetBool("PanelisUp", false);
+        }
     }
 
     private void OnMouseDown()

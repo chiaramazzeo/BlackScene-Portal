@@ -23,6 +23,8 @@ public class ScrollDismiss : MonoBehaviour
 
     public UnityEvent onPanelDismissed;
 
+    public Animator animator = null;
+
     private void Start()
     {
         scrollRect.onValueChanged.AddListener(OnScrollValueChanged);
@@ -47,7 +49,13 @@ public class ScrollDismiss : MonoBehaviour
                 scrollRect.velocity = Vector2.zero;
                 
                 panelToDismiss.SetActive(false);
-                panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
+                //panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
+
+                if (animator != null)
+                {
+                    animator.SetBool("Activate Panel", false);
+                    animator.SetBool("PanelisUp", false);
+                }
 
                 // Put any code here that you want to run after the panel has been dismissed.
                 Debug.Log("Panel has been dismissed.");
