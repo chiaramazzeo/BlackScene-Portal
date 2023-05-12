@@ -36,6 +36,7 @@ public class ScrollDismiss : MonoBehaviour
 
     private void Update()
     {
+
         if(CanTransitionDown())
         {
             // Continue moving the panel downwards until it's dismissed.
