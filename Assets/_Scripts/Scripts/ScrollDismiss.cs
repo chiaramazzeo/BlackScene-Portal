@@ -50,7 +50,7 @@ public class ScrollDismiss : MonoBehaviour
                 scrollRect.velocity = Vector2.zero;
                 
                 panelToDismiss.SetActive(false);
-                //panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
+                panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
 
                 if (animator != null)
                 {
