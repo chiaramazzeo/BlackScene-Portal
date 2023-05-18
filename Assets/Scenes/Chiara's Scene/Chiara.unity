@@ -259,6 +259,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!95 &62467291
 Animator:
   serializedVersion: 5
@@ -644,6 +645,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!114 &270287162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +705,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!4 &273897097
 Transform:
   m_ObjectHideFlags: 0
@@ -1064,6 +1067,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cb7b16c79b83ae74487777a0e8524391, type: 3}
   - {fileID: 21300000, guid: b0a71e31329fcfa42b65fc6c1ca47d88, type: 3}
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!1001 &326363756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1165,6 +1169,7 @@ MonoBehaviour:
   - {fileID: 0}
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!114 &328497555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1882,6 +1887,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!114 &593202788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2544,6 +2550,11 @@ PrefabInstance:
     - target: {fileID: 2663650412511524140, guid: 42f0903a18c7a9e4988e092aaf34b16b,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663650412511524142, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2663650412511524142, guid: 42f0903a18c7a9e4988e092aaf34b16b,
@@ -2833,7 +2844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664039995}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48cf9da7e849d574d9048e8bb787544b, type: 3}
   m_Name: 
@@ -2844,7 +2855,7 @@ MonoBehaviour:
   onPanelDismissed:
     m_PersistentCalls:
       m_Calls: []
-  animator: {fileID: 0}
+  animator: {fileID: 664040008}
 --- !u!114 &664039999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2852,7 +2863,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664039995}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
@@ -3251,6 +3262,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!95 &849961023
 Animator:
   serializedVersion: 5
@@ -3413,6 +3425,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!4 &948158616
 Transform:
   m_ObjectHideFlags: 0
@@ -3569,7 +3582,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0388d3a1eab9a7f4ab1a4842c0835d64, type: 3}
   - {fileID: 21300000, guid: cb7b16c79b83ae74487777a0e8524391, type: 3}
   - {fileID: 21300000, guid: b0a71e31329fcfa42b65fc6c1ca47d88, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 664040008}
+  ScrollDismissScript: {fileID: 664039998}
 --- !u!95 &1010263802
 Animator:
   serializedVersion: 5
@@ -3933,6 +3947,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!95 &1048956044
 Animator:
   serializedVersion: 5
@@ -4805,6 +4820,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!65 &1269350176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4874,6 +4890,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!95 &1309829248
 Animator:
   serializedVersion: 5
@@ -6335,6 +6352,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!95 &1832024800
 Animator:
   serializedVersion: 5
@@ -6464,6 +6482,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!114 &1960039342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7060,6 +7079,153 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1432903791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2103814213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103814214}
+  - component: {fileID: 2103814218}
+  - component: {fileID: 2103814217}
+  - component: {fileID: 2103814216}
+  - component: {fileID: 2103814215}
+  m_Layer: 5
+  m_Name: InvisibleButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2103814214
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103814213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 664039997}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 833.88025}
+  m_SizeDelta: {x: 1080, y: 252.2394}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2103814215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103814213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5cbf9524e83145c5826b5869889f116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 664040008}
+--- !u!114 &2103814216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103814213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2103814217}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2103814215}
+        m_TargetAssemblyTypeName: HidePanel, Assembly-CSharp
+        m_MethodName: HPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2103814217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103814213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2103814218
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103814213}
+  m_CullTransparentMesh: 1
 --- !u!1 &2121209255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 483084e7625239340a2f6b0175fb9b79,
@@ -7096,6 +7262,7 @@ MonoBehaviour:
   imagePanels: []
   panelImages: []
   animator: {fileID: 0}
+  ScrollDismissScript: {fileID: 0}
 --- !u!114 &2121209258
 MonoBehaviour:
   m_ObjectHideFlags: 0
