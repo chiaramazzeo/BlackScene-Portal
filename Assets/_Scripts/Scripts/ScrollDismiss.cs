@@ -45,11 +45,11 @@ public class ScrollDismiss : MonoBehaviour
             //cachedTransform.position = rectPosition;
 
             // Check if the panel is in position to be fully discarded.
-            if (cachedTransform.position.y < stopLocation )
+            //if (cachedTransform.position.y < stopLocation )
             {
                 scrollRect.velocity = Vector2.zero;
                 
-                panelToDismiss.SetActive(false);
+                //panelToDismiss.SetActive(false);
                 panelToDismiss.transform.position = new Vector3(panelToDismiss.transform.position.x, initialPoint, panelToDismiss.transform.position.z);
 
                 if (animator != null)
@@ -65,7 +65,7 @@ public class ScrollDismiss : MonoBehaviour
         }
     }
 
-    private bool CanTransitionDown()
+    public bool CanTransitionDown()
     {
         return canTransition;
     }

@@ -17,6 +17,8 @@ public class ClickInputManager : MonoBehaviour
 
     private ActivatePanel activationScript;
 
+    public ScrollDismiss ScrollDismissScript;
+
     public void Start()
     {
         activationScript = GetComponent<ActivatePanel>();
