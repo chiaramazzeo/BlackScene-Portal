@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: d906b70f1b4f90b428de8dde602bc772
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TT Ramillas Initials Trl
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 62b556a5f69621244aff1c704585d4c7, type: 3}
+  - {fileID: 12800000, guid: b55f8cb9db7f0724b98258472949ad09, type: 3}
+  - {fileID: 12800000, guid: 07be64735ebf807459dabbf0b65099d9, type: 3}
+  - {fileID: 12800000, guid: 22f764dd071c9ed4c99dcbebf771d7f8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

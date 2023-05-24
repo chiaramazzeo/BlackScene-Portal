@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 097bde354644ebe4fad0715cec96867b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TT Ramillas Trl
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 70b74b9ad681c3347992a4c04cd21527, type: 3}
+  - {fileID: 12800000, guid: 12e3e2d43b7e9824b9893a8e48c36186, type: 3}
+  - {fileID: 12800000, guid: 7714d5945f0610044a6fcce072907cdd, type: 3}
+  - {fileID: 12800000, guid: a82c1f56119a55c47bd3a39fe11619d2, type: 3}
+  - {fileID: 12800000, guid: d34ac7058bfbf034482c2573e17f9e81, type: 3}
+  - {fileID: 12800000, guid: 4703bb10875cd6140b78121bd150f066, type: 3}
+  - {fileID: 12800000, guid: f10b44a44b03b0240a0cc0ae4b9b17e5, type: 3}
+  - {fileID: 12800000, guid: e0e5e88be30482a4b8d328c0d77ef7c7, type: 3}
+  - {fileID: 12800000, guid: 7355ece607848044ba686d934443e19f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

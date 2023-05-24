@@ -2170,6 +2170,42 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124936439574421246, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -5.2261
+      objectReference: {fileID: 0}
+    - target: {fileID: 124936439574421246, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -12.9421
+      objectReference: {fileID: 0}
+    - target: {fileID: 124936439574421246, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.3564
+      objectReference: {fileID: 0}
+    - target: {fileID: 124936439574421246, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -168.24646
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114068638040800444, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114068639413656158, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114068639413656158, guid: 42f0903a18c7a9e4988e092aaf34b16b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec9a29828c2a697469831fd37845c3c7,
+        type: 3}
     - target: {fileID: 1969060614683013162, guid: 42f0903a18c7a9e4988e092aaf34b16b,
         type: 3}
       propertyPath: m_IsActive
@@ -2363,7 +2399,7 @@ PrefabInstance:
     - target: {fileID: 2418897218494100945, guid: 42f0903a18c7a9e4988e092aaf34b16b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2418897218494100950, guid: 42f0903a18c7a9e4988e092aaf34b16b,
         type: 3}
@@ -6308,7 +6344,7 @@ RectTransform:
   m_Children:
   - {fileID: 1846209816}
   m_Father: {fileID: 16236372}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

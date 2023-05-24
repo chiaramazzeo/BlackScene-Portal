@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8bfbf9c7b4e8d55459fd045c3ab76f17
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TT Ramillas Trial Black Decor
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e22494fdb21e0a949ad18ad7969e520c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
