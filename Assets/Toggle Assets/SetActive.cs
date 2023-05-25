@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SetActive : MonoBehaviour
 {
     public GameObject element;
+    public GameObject UI;
     public Toggle toggle;
 
     void Start()
@@ -20,10 +21,12 @@ public class SetActive : MonoBehaviour
         if (toggle.isOn)
         {
             element.SetActive(true); // Set the element to true if the toggle is on
+            UI.SetActive(true);
         }
         else
         {
             element.SetActive(false); // Set the element to false if the toggle is off
+            UI.SetActive(false);
         }
     }
 }
