@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using TS.PageSlider;
 
 public class ClickInputManager : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class ClickInputManager : MonoBehaviour
 
     public ScrollDismiss ScrollDismissScript;
 
+    [SerializeField] private PageScroller scroller = null;
+
+    
     public void Start()
     {
         activationScript = GetComponent<ActivatePanel>();
@@ -35,6 +39,8 @@ public class ClickInputManager : MonoBehaviour
         // Show the panels.
         activationScript.TransitionToNextPanel();
 
+        OnEnable();
+        
         if (animator != null)
         {
             animator.SetBool("Activate Panel", true);
@@ -45,6 +51,11 @@ public class ClickInputManager : MonoBehaviour
     private void OnMouseDown()
     {
         ShowPanel();
+    }
+
+    public void OnEnable()
+    {
+        scroller?.OverrideToPage(0);
     }
 
     // Update is called once per frame

@@ -266,6 +266,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!95 &62467291
 Animator:
   serializedVersion: 5
@@ -704,6 +705,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!114 &270287162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,6 +766,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!4 &273897097
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,6 +1134,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b0a71e31329fcfa42b65fc6c1ca47d88, type: 3}
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!1001 &326363756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1233,6 +1237,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!114 &328497555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,6 +2075,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!114 &593202788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3656,6 +3662,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!95 &849961023
 Animator:
   serializedVersion: 5
@@ -3895,6 +3902,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!4 &948158616
 Transform:
   m_ObjectHideFlags: 0
@@ -4055,6 +4063,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ca7dfa23aa11dc146a662ed24d09844c, type: 3}
   animator: {fileID: 664040008}
   ScrollDismissScript: {fileID: 664039998}
+  scroller: {fileID: 2129646139}
 --- !u!95 &1010263802
 Animator:
   serializedVersion: 5
@@ -4419,6 +4428,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!95 &1048956044
 Animator:
   serializedVersion: 5
@@ -5435,6 +5445,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!65 &1269350176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5505,6 +5516,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 664040008}
   ScrollDismissScript: {fileID: 664039998}
+  scroller: {fileID: 0}
 --- !u!95 &1309829248
 Animator:
   serializedVersion: 5
@@ -7241,6 +7253,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
+  scroller: {fileID: 0}
 --- !u!95 &1832024800
 Animator:
   serializedVersion: 5
@@ -7448,6 +7461,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 664040008}
   ScrollDismissScript: {fileID: 664039998}
+  scroller: {fileID: 0}
 --- !u!114 &1960039342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8238,6 +8252,7 @@ MonoBehaviour:
   panelImages: []
   animator: {fileID: 664040008}
   ScrollDismissScript: {fileID: 664039998}
+  scroller: {fileID: 0}
 --- !u!114 &2121209258
 MonoBehaviour:
   m_ObjectHideFlags: 0

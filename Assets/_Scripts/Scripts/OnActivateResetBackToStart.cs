@@ -7,7 +7,7 @@ public class OnActivateResetBackToStart : MonoBehaviour
 {
     [SerializeField] private PageScroller scroller = null;
 
-    private void OnEnable()
+    public void OnEnable()
     {
         scroller?.OverrideToPage(0);
     }
