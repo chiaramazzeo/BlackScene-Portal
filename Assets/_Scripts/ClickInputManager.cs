@@ -8,6 +8,7 @@ using TS.PageSlider;
 public class ClickInputManager : MonoBehaviour
 {
 
+    private MusicController musicController;
     public GameObject panelToAppear;
     public TextMeshProUGUI objectName, objectDescription;
 
@@ -26,6 +27,7 @@ public class ClickInputManager : MonoBehaviour
     public void Start()
     {
         activationScript = GetComponent<ActivatePanel>();
+        musicController = FindObjectOfType<MusicController>();
     }
 
     public void ShowPanel()
@@ -45,6 +47,7 @@ public class ClickInputManager : MonoBehaviour
         {
             animator.SetBool("Activate Panel", true);
             animator.SetBool("PanelisUp", false);
+            musicController.StartFadeInAndOut();
         }
     }
 
