@@ -11,4 +11,12 @@ public void Sendanimation()
 {
     animator.SetBool("MessageSent", true);
 }
+
+public void Congratulations() 
+{
+    animator.SetBool("CongIN", true);
 }
+}
+
+
+
