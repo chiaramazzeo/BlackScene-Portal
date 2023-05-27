@@ -8,9 +8,11 @@ public class SwitchToggle : MonoBehaviour
     [SerializeField] RectTransform uiHandleRectTransform;
     [SerializeField] Color backgroundActiveColor;
     [SerializeField] Color handleActiveColor;
+    [SerializeField] Sprite secondSprite;
 
     Image backgroundImage, handleImage;
     Color backgroundDefaultColor, handleDefaultColor;
+    Sprite handleDefaultSprite;
 
     Toggle toggle;
 
@@ -28,6 +30,8 @@ public class SwitchToggle : MonoBehaviour
         backgroundDefaultColor = backgroundImage.color;
         handleDefaultColor = handleImage.color;
 
+        handleDefaultSprite = handleImage.sprite;
+
         toggle.onValueChanged.AddListener(OnSwitch);
 
         if (toggle.isOn)
@@ -44,6 +48,8 @@ public class SwitchToggle : MonoBehaviour
         backgroundImage.color = on ? backgroundActiveColor : backgroundDefaultColor;
 
         handleImage.color = on ? handleActiveColor : handleDefaultColor;
+
+        handleImage.sprite = on ? secondSprite : handleDefaultSprite;
      
         
     }
