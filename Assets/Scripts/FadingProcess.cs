@@ -22,7 +22,7 @@ public class FadingProcess : MonoBehaviour
     {
         // Optionally, you can delay the fading process by calling StartFadingDelayed()
         // and specifying the delay time.
-        StartFadingDelayed(6.6f);
+        StartFadingDelayed(1.0f);
     }
 
     // Start the fading process after a specified delay
