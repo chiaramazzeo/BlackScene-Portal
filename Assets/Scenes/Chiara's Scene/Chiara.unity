@@ -1926,6 +1926,7 @@ MonoBehaviour:
   musicSource1: {fileID: 413377630}
   musicSource2: {fileID: 1177951740}
   fadeDuration: 2
+  stopSecondSong: 1
 --- !u!4 &367779994
 Transform:
   m_ObjectHideFlags: 0
@@ -2202,6 +2203,7 @@ MonoBehaviour:
   musicSource1: {fileID: 413377630}
   musicSource2: {fileID: 1177951740}
   fadeDuration: 3
+  stopSecondSong: 1
 --- !u!4 &413377632
 Transform:
   m_ObjectHideFlags: 0
@@ -2369,6 +2371,7 @@ MonoBehaviour:
   musicSource1: {fileID: 0}
   musicSource2: {fileID: 0}
   fadeDuration: 2
+  stopSecondSong: 1
 --- !u!1001 &500135712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2806,7 +2809,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -10223,6 +10226,7 @@ MonoBehaviour:
   musicSource1: {fileID: 413377630}
   musicSource2: {fileID: 1177951740}
   fadeDuration: 2
+  stopSecondSong: 1
 --- !u!1 &1208352744
 GameObject:
   m_ObjectHideFlags: 0
@@ -13233,7 +13237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1980140112
 Transform:
   m_ObjectHideFlags: 0

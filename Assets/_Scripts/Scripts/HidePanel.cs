@@ -6,12 +6,13 @@ public class HidePanel : MonoBehaviour
 {
 
     public Animator animator = null;
+    private MusicController musicController;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        musicController = FindObjectOfType<MusicController>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,8 @@ public class HidePanel : MonoBehaviour
         if (animator != null && animator.GetBool("Activate Panel"))
                 {
                     animator.SetBool("Activate Panel", false);
+                    musicController.StartFadeOutAndIn();
                 }
     }
 }
+
