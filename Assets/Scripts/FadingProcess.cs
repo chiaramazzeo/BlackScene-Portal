@@ -20,26 +20,26 @@ public class FadingProcess : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Optionally, you can delay the fading process by calling StartFadingDelayed()
-        // and specifying the delay time.
-        StartFadingDelayed(1.0f);
+        // Disable the fading process at the start
+        DisableFadingProcess();
     }
 
-    // Start the fading process after a specified delay
-    public void StartFadingDelayed(float startDelay)
+    // Attach this method to the button's OnClick event in the Unity Inspector
+    public void EnableFadingProcess()
     {
+        // Start the fading process only if it hasn't started already
         if (!isFadingStarted)
         {
-            StartCoroutine(StartFadingCoroutine(startDelay));
             isFadingStarted = true;
+            StartCoroutine(FadeInAndOut());
         }
     }
 
-    private IEnumerator StartFadingCoroutine(float startDelay)
+    // Disable the fading process
+    public void DisableFadingProcess()
     {
-        yield return new WaitForSeconds(startDelay);
-
-        yield return StartCoroutine(FadeInAndOut());
+        StopAllCoroutines();
+        isFadingStarted = false;
     }
 
     private IEnumerator FadeInAndOut()
@@ -81,12 +81,16 @@ public class FadingProcess : MonoBehaviour
             // Activate the fourth image
             image4.gameObject.SetActive(true);
 
-            yield return StartCoroutine(FadeTwoImages(image3, image4, true)); // Fade in both third and fourth images
+            StartCoroutine(FadeTwoImages(image3, image4, true)); // Start fading in the third and fourth images simultaneously
 
             // Wait for the fade-in to finish
-            yield return new WaitForSeconds(delay);
+            yield return new WaitForSeconds(fadeDuration);
 
-            yield return StartCoroutine(FadeTwoImages(image3, image4, false)); // Fade out both third and fourth images
+            StartCoroutine(FadeTwoImages(image3, image4, false)); // Start fading out the third and fourth images simultaneously
+
+            // Wait for the fade-out to finish
+            yield return new WaitForSeconds(fadeDuration);
+
 
             isImage3Faded = true;
             isImage4Faded = true;
@@ -130,6 +134,3 @@ public class FadingProcess : MonoBehaviour
         }
     }
 }
-
-
-

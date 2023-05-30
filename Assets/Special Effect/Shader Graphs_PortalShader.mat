@@ -59,7 +59,7 @@ Material:
     - _BUILTIN_ZWriteControl: 0
     - _DissolveAmmount: 1
     - _Scale: 3.5
-    - _Speed: 0.05
+    - _Speed: 0.02
     - _TwirlStrength: 2
     m_Colors:
     - _Color: {r: 1.0376905, g: 5.7073007, b: 14.15707, a: 1}
