@@ -36,6 +36,7 @@ public class ClickInputManager : MonoBehaviour
         for (int i = 0; i < imagePanels.Count; i++)
         {
             imagePanels[i].sprite = panelImages[i];
+            Debug.Log(panelImages[i]);
         }
 
         // Show the panels.
@@ -51,10 +52,10 @@ public class ClickInputManager : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    /*private void OnMouseDown()
     {
-        ShowPanel();
-    }
+        <ShowPanel();
+    }*/
 
     public void OnEnable()
     {
