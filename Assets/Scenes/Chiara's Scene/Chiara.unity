@@ -23743,7 +23743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a7fd32cf6cc3543ae27af29efc9064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToAppear: {fileID: 0}
+  panelToAppear: {fileID: 2663650413055969046}
   objectName: {fileID: 0}
   objectDescription: {fileID: 0}
   imagePanels:
