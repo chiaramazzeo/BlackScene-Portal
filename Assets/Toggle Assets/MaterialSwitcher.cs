@@ -8,6 +8,9 @@ public class MaterialSwitcher : MonoBehaviour
     public Material activeMaterial;
     private Material defaultMaterial;
 
+    public GameObject objectToActivate1;
+    public GameObject objectToActivate2;
+
     void Start()
     {
         defaultMaterial = objectRenderer.material;
@@ -19,10 +22,27 @@ public class MaterialSwitcher : MonoBehaviour
         if (isActive)
         {
             objectRenderer.material = activeMaterial;
+            if (objectToActivate1 != null)
+            {
+                objectToActivate1.SetActive(true);
+            }
+            if (objectToActivate2 != null)
+            {
+                objectToActivate2.SetActive(true);
+            }
         }
         else
         {
             objectRenderer.material = defaultMaterial;
+            if (objectToActivate1 != null)
+            {
+                objectToActivate1.SetActive(false);
+            }
+            if (objectToActivate2 != null)
+            {
+                objectToActivate2.SetActive(false);
+            }
         }
     }
 }
+

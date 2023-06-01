@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ObjectsDisable : MonoBehaviour
 {
-    public GameObject[] objects;
+    public GameObject[] objectsToDisable;
 
     void Start()
     {
@@ -20,14 +20,14 @@ public class ObjectsDisable : MonoBehaviour
     {
         if (toggle.isOn)
         {
-            foreach (GameObject obj in objects)
+            foreach (GameObject obj in objectsToDisable)
             {
                 obj.SetActive(false);
             }
         }
         else
         {
-            foreach (GameObject obj in objects)
+            foreach (GameObject obj in objectsToDisable)
             {
                 obj.SetActive(true);
             }
