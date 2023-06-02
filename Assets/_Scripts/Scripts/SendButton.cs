@@ -15,6 +15,11 @@ public void Sendanimation()
     animator.SetBool("MessageSent", true);
 }
 
+public void OutPhrase1() 
+{
+    animator.SetBool("OutPhrase1", true);
+}
+
 public void Congratulations() 
 {
     animator.SetBool("CongIN", true);

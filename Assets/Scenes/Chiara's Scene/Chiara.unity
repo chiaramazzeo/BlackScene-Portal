@@ -30082,6 +30082,8 @@ GameObject:
   - component: {fileID: 1878386401}
   - component: {fileID: 1878386404}
   - component: {fileID: 1878386403}
+  - component: {fileID: 1878386406}
+  - component: {fileID: 1878386405}
   m_Layer: 5
   m_Name: Phrase1
   m_TagString: Untagged
@@ -30147,6 +30149,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878386400}
   m_CullTransparentMesh: 1
+--- !u!114 &1878386405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878386400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  buttonImage1: {fileID: 0}
+  buttonImage2: {fileID: 0}
+--- !u!95 &1878386406
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878386400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4764dde4ac7ab4ac58c47c12b19691ed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1927718293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5481599859360250971, guid: 5553abd2a7d08b14984f21f6cbc6691e,
@@ -35572,6 +35610,7 @@ GameObject:
   - component: {fileID: 8998598733170245612}
   - component: {fileID: 8998598733170245615}
   - component: {fileID: 562762830}
+  - component: {fileID: 8998598733170245616}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -35681,6 +35720,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8998598733170245615}
+        m_TargetAssemblyTypeName: SendButton, Assembly-CSharp
+        m_MethodName: OutPhrase1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8998598733170245613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35732,6 +35783,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8998598734118685723}
+  buttonImage1: {fileID: 0}
+  buttonImage2: {fileID: 0}
+--- !u!114 &8998598733170245616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998598733170245610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1878386406}
   buttonImage1: {fileID: 0}
   buttonImage2: {fileID: 0}
 --- !u!1 &8998598733337474250
