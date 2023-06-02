@@ -7,8 +7,6 @@ public class SendButton : MonoBehaviour
 {
 
 public Animator animator = null;
-    public GameObject buttonImage1;
-    public GameObject buttonImage2;
 
 public void Sendanimation() 
 {
@@ -23,8 +21,6 @@ public void OutPhrase1()
 public void Congratulations() 
 {
     animator.SetBool("CongIN", true);
-        buttonImage1.SetActive(true);
-        buttonImage2.SetActive(true);
 
 
 }

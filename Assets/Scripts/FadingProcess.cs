@@ -7,14 +7,12 @@ public class FadingProcess : MonoBehaviour
     public Image image1;
     public Image image2;
     public Image image3;
-    public Image image4;
     public float fadeDuration = 1.0f;
     public float delay = 1.0f;
 
     private bool isImage1Faded = false;
     private bool isImage2Faded = false;
     private bool isImage3Faded = false;
-    private bool isImage4Faded = false;
     private bool isFadingStarted = false;
 
     // Start is called before the first frame update
@@ -74,26 +72,23 @@ public class FadingProcess : MonoBehaviour
             isImage2Faded = true;
         }
 
-        if (!isImage3Faded && !isImage4Faded && isImage2Faded)
+        if (!isImage3Faded && isImage2Faded)
         {
             // Activate the third image
             image3.gameObject.SetActive(true);
-            // Activate the fourth image
-            image4.gameObject.SetActive(true);
 
-            StartCoroutine(FadeTwoImages(image3, image4, true)); // Start fading in the third and fourth images simultaneously
+            StartCoroutine(FadeRawImage(image3, true)); // Start fading in the third and fourth images simultaneously
 
             // Wait for the fade-in to finish
             yield return new WaitForSeconds(fadeDuration);
 
-            StartCoroutine(FadeTwoImages(image3, image4, false)); // Start fading out the third and fourth images simultaneously
+            StartCoroutine(FadeRawImage(image3, false)); // Start fading out the third and fourth images simultaneously
 
             // Wait for the fade-out to finish
             yield return new WaitForSeconds(fadeDuration);
 
 
             isImage3Faded = true;
-            isImage4Faded = true;
         }
     }
 

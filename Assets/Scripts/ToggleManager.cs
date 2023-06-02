@@ -7,6 +7,7 @@ public class ToggleManager : MonoBehaviour
     public Image secondImage;
     public GameObject[] gameObjectsToActivate;
     public GameObject[] gameObjectsToDeactivate;
+    public GameObject Congrats;
     public Toggle toggle;
     public float fadeDuration = 1f;
 
@@ -32,9 +33,10 @@ public class ToggleManager : MonoBehaviour
         {
             firstImage.gameObject.SetActive(false);
             secondImage.gameObject.SetActive(false);
+            Congrats.SetActive(false);
 
             // Deactivate game objects
-            foreach (GameObject gameObject in gameObjectsToDeactivate)
+            foreach (GameObject gameObject in gameObjectsToActivate)
             {
                 gameObject.SetActive(false);
             }
