@@ -951,7 +951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &257821828
 RectTransform:
   m_ObjectHideFlags: 0
@@ -966,8 +966,8 @@ RectTransform:
   m_Children:
   - {fileID: 1339830655}
   - {fileID: 1449116159}
-  m_Father: {fileID: 1318374246}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3285,12 +3285,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   ScrollDismissScript: {fileID: 0}
   scroller: {fileID: 0}
---- !u!1 &623908664 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6238274914913684483, guid: 915be125fc12a4a31937221bd5d27119,
-    type: 3}
-  m_PrefabInstance: {fileID: 1648932079}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &623908666 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6238274914913684480, guid: 915be125fc12a4a31937221bd5d27119,
@@ -5951,7 +5945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1155246140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11226,7 +11220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1252206578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11241,8 +11235,8 @@ RectTransform:
   m_Children:
   - {fileID: 1878386401}
   - {fileID: 1155246140}
-  m_Father: {fileID: 1318374246}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11511,14 +11505,13 @@ GameObject:
   - component: {fileID: 1339830655}
   - component: {fileID: 1339830658}
   - component: {fileID: 1339830657}
-  - component: {fileID: 1339830656}
   m_Layer: 5
   m_Name: Phrase1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1339830655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11539,20 +11532,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: 247, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1339830656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339830654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab908a1b5c76d47a39fe252fe4abe320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1449116160}
-  fadeDuration: 1
 --- !u!114 &1339830657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16573,7 +16552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1438616447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16770,7 +16749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1449116159
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23792,62 +23771,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e2784c90b9f494ab64f005e937b524, type: 3}
---- !u!1 &1672601218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1672601220}
-  - component: {fileID: 1672601219}
-  m_Layer: 0
-  m_Name: ToggleManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1672601219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672601218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a3c781726c8b4953a00de0f19a982af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggleSwitch: {fileID: 1767790249}
-  objectsToDisable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  firstImage: {fileID: 0}
-  secondImage: {fileID: 0}
-  objectsToEnable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 8998598733337474250}
---- !u!4 &1672601220
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672601218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6700001, y: 3.13, z: -4.08}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738629707
 GameObject:
   m_ObjectHideFlags: 0
@@ -28760,10 +28683,8 @@ GameObject:
   - component: {fileID: 1767790250}
   - component: {fileID: 1767790251}
   - component: {fileID: 1767790253}
-  - component: {fileID: 1767790252}
-  - component: {fileID: 1767790254}
-  - component: {fileID: 1767790256}
   - component: {fileID: 1767790255}
+  - component: {fileID: 1767790256}
   m_Layer: 5
   m_Name: Switch Toggle
   m_TagString: Untagged
@@ -28839,9 +28760,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1767790254}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28852,23 +28773,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
---- !u!114 &1767790252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767790249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToDisable:
-  - {fileID: 573716202}
-  - {fileID: 1999007672}
-  - {fileID: 1822606684}
-  - {fileID: 1542233318}
 --- !u!114 &1767790253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28885,22 +28789,6 @@ MonoBehaviour:
   backgroundActiveColor: {r: 1, g: 0.011764706, b: 0.52156866, a: 1}
   handleActiveColor: {r: 1, g: 1, b: 1, a: 1}
   secondSprite: {fileID: 21300000, guid: a029ec32eaf88da4397f6e610c9ab05b, type: 3}
---- !u!114 &1767790254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767790249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 475ff4403edbe034298b38fcd153f0f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  element: {fileID: 601544723}
-  UI: {fileID: 8998598733337474250}
-  Congratulations: {fileID: 623908664}
-  toggle: {fileID: 1767790251}
 --- !u!114 &1767790255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28913,18 +28801,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3c781726c8b4953a00de0f19a982af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggleSwitch: {fileID: 1767790249}
-  objectsToDisable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  firstImage: {fileID: 0}
-  secondImage: {fileID: 0}
-  objectsToEnable:
-  - {fileID: 0}
-  - {fileID: 0}
+  firstImage: {fileID: 1339830657}
+  secondImage: {fileID: 1449116160}
+  gameObjectsToActivate:
+  - {fileID: 1878386400}
+  - {fileID: 1155246139}
   - {fileID: 8998598733337474250}
+  gameObjectsToDeactivate:
+  - {fileID: 1878386400}
+  - {fileID: 1155246139}
+  - {fileID: 8998598733337474250}
+  toggle: {fileID: 1767790251}
+  fadeDuration: 1
 --- !u!114 &1767790256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28932,13 +28820,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767790249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab908a1b5c76d47a39fe252fe4abe320, type: 3}
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  fadeDuration: 1
+  objectsToDisable:
+  - {fileID: 133970}
+  - {fileID: 291385370}
+  - {fileID: 2089921410}
+  - {fileID: 53454111}
 --- !u!1001 &1801276975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29860,14 +29751,13 @@ GameObject:
   - component: {fileID: 1878386401}
   - component: {fileID: 1878386404}
   - component: {fileID: 1878386403}
-  - component: {fileID: 1878386402}
   m_Layer: 5
   m_Name: Phrase1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1878386401
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29888,20 +29778,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 450}
   m_SizeDelta: {x: 282, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1878386402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878386400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab908a1b5c76d47a39fe252fe4abe320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1155246141}
-  fadeDuration: 1
 --- !u!114 &1878386403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30340,12 +30216,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e8024e27eb5a164ebe05b3ca9240790, type: 3}
---- !u!1 &1999007672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1592e81491fa347018c1214e97220c83,
-    type: 3}
-  m_PrefabInstance: {fileID: 535111188}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004649991
 GameObject:
   m_ObjectHideFlags: 0

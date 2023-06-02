@@ -3,75 +3,89 @@ using UnityEngine.UI;
 
 public class ToggleManager : MonoBehaviour
 {
-    public GameObject toggleSwitch;
-    public GameObject[] objectsToDisable;
-    public GameObject firstImage;
-    public GameObject secondImage;
-    public GameObject[] objectsToEnable;
+    public Image firstImage;
+    public Image secondImage;
+    public GameObject[] gameObjectsToActivate;
+    public GameObject[] gameObjectsToDeactivate;
+    public Toggle toggle;
+    public float fadeDuration = 1f;
 
-    private bool isToggleOn = false;
+    private bool isFading = false;
+    private int clickCount = 0;
 
-    public void OnToggleSwitch()
+    void Start()
     {
-        if (isToggleOn)
+        toggle.onValueChanged.AddListener(delegate {
+            ToggleValueChanged(toggle);
+        });
+    }
+
+    void ToggleValueChanged(Toggle toggle)
+    {
+        if (toggle.isOn)
         {
-            // Disable 3 game objects (2 images) with fade-in effect
-            foreach (GameObject obj in objectsToEnable)
-            {
-                obj.SetActive(false);
-                FadeIn(obj);
-            }
-            isToggleOn = false;
+            clickCount = 0;
+            firstImage.gameObject.SetActive(true);
+            secondImage.gameObject.SetActive(false);
         }
         else
         {
-            // Enable first image with quick fade-in effect
-            firstImage.SetActive(true);
-            FadeIn(firstImage);
+            firstImage.gameObject.SetActive(false);
+            secondImage.gameObject.SetActive(false);
 
-            // Disable 4 game objects with quick fade-in effect
-            foreach (GameObject obj in objectsToDisable)
+            // Deactivate game objects
+            foreach (GameObject gameObject in gameObjectsToDeactivate)
             {
-                obj.SetActive(false);
-                FadeIn(obj);
+                gameObject.SetActive(false);
             }
-            isToggleOn = true;
         }
     }
 
-    public void OnFirstImageClick()
+    private void Update()
     {
-        // Enable second image with slower fade-in effect
-        secondImage.SetActive(true);
-        FadeInSlow(secondImage);
-    }
-
-    public void OnSecondImageClick()
-    {
-        // Disable both images and enable 3 game objects with fade-in effect
-        foreach (GameObject obj in objectsToEnable)
+        if (toggle.isOn && Input.GetMouseButtonDown(0) && !isFading)
         {
-            obj.SetActive(true);
-            FadeIn(obj);
+            clickCount++;
+            StartCoroutine(FadeInImage());
+
+            if (clickCount >= 2)
+            {
+                firstImage.gameObject.SetActive(false);
+                secondImage.gameObject.SetActive(false);
+
+                foreach (GameObject gameObject in gameObjectsToActivate)
+                {
+                    gameObject.SetActive(true);
+                }
+            }
         }
-        secondImage.SetActive(false);
     }
 
-    private void FadeIn(GameObject obj)
+    private System.Collections.IEnumerator FadeInImage()
     {
-        // Implement your fade-in effect for the object
-        // For example, you can use the Unity UI CanvasGroup component to control the alpha value over time
-        CanvasGroup canvasGroup = obj.GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
-        // Implement your fade-in animation or tweening logic here
-    }
+        isFading = true;
 
-    private void FadeInSlow(GameObject obj)
-    {
-        // Implement your slower fade-in effect for the object
-        // For example, you can use the Unity UI CanvasGroup component to control the alpha value over time
-        CanvasGroup canvasGroup = obj.GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
-        // Implement your slower fade-in animation or tweening logic here
+        secondImage.gameObject.SetActive(true);
+
+        Color imageColor = secondImage.color;
+        imageColor.a = 0f;
+        secondImage.color = imageColor;
+
+        float timer = 0f;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            float normalizedTime = timer / fadeDuration;
+
+            imageColor.a = Mathf.Lerp(0f, 1f, normalizedTime);
+            secondImage.color = imageColor;
+
+            yield return null;
+        }
+
+        imageColor.a = 1f;
+        secondImage.color = imageColor;
+
+        isFading = false;
     }
 }
