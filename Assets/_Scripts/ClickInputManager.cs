@@ -52,10 +52,10 @@ public class ClickInputManager : MonoBehaviour
         }
     }
 
-    /*private void OnMouseDown()
+    private void OnMouseDown()
     {
-        <ShowPanel();
-    }*/
+        ShowPanel();
+    }
 
     public void OnEnable()
     {
@@ -78,11 +78,15 @@ public class ClickInputManager : MonoBehaviour
                 {
                     if (hit.collider != null)
                     {
-                        ShowPanel();
+                        // Check if the clicked object is on the "Clickable" layer
+                         if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Clickable"))
+                        {
+                            ShowPanel();
+                        }
                     }
-                }
 
                
+                 }
             }
         }
 

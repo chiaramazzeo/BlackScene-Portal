@@ -1170,6 +1170,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pin map
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4965545d823ebd44e845e1104a19f384,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4965545d823ebd44e845e1104a19f384, type: 3}
 --- !u!1 &247027017
@@ -2865,6 +2870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Microphone
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1592e81491fa347018c1214e97220c83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1592e81491fa347018c1214e97220c83,
         type: 3}
@@ -4651,7 +4661,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010263799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3c5a876a515aee40ab083eaa61f42f1, type: 3}
   m_Name: 
@@ -9985,6 +9995,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mic
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3e8024e27eb5a164ebe05b3ca9240790,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e8024e27eb5a164ebe05b3ca9240790, type: 3}
 --- !u!1001 &1112360217
@@ -11515,6 +11530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: painting-kit
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 483084e7625239340a2f6b0175fb9b79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483084e7625239340a2f6b0175fb9b79, type: 3}
 --- !u!1 &1345995762
@@ -11536,7 +11556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1345995763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11901,6 +11921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AfroComb
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 658cd47a2d26b4f6d8de1e79a04a3ef7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 658cd47a2d26b4f6d8de1e79a04a3ef7,
         type: 3}
@@ -12302,6 +12327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trophy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7a33fe9d1f24f4d07887df735a6458fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a33fe9d1f24f4d07887df735a6458fa, type: 3}
@@ -13332,6 +13362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 961da2230b76c48ac911df95b69a8b59,
         type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 961da2230b76c48ac911df95b69a8b59,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -13841,7 +13876,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767790249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
   m_Name: 
@@ -13874,7 +13909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767790249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 475ff4403edbe034298b38fcd153f0f9, type: 3}
   m_Name: 
@@ -24318,6 +24353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mask
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1ff5d26d6b849462485854250ff98dd6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1ff5d26d6b849462485854250ff98dd6,
         type: 3}
