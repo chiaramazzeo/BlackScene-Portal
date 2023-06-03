@@ -13,10 +13,6 @@ public void Sendanimation()
     animator.SetBool("MessageSent", true);
 }
 
-public void OutPhrase1() 
-{
-    animator.SetBool("OutPhrase1", true);
-}
 
 public void Congratulations() 
 {
@@ -24,6 +20,31 @@ public void Congratulations()
 
 
 }
+
+public void FinalButtons() 
+{
+    animator.SetBool("InstaButtonOn", true);
+
+}
+
+public void ARButton() 
+{
+    animator.SetBool("ARButtonOn", true);
+
+}
+
+public void ShareOut() 
+{
+    animator.SetBool("ShareIn", false);
+
+}
+
+public void YourOut() 
+{
+    animator.SetBool("YourIn", false);
+
+}
+
 }
 
 
