@@ -6,6 +6,6 @@ public class OpenUrl : MonoBehaviour
 {
     public void Openurl()
     {
-        Application.OpenURL("https://www.instagram.com/aeiade/");
+        Application.OpenURL("https://www.instagram.com/we.are.renaissance/");
     }
 }
