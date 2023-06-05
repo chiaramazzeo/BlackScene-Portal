@@ -6,42 +6,17 @@ using UnityEngine.UI;
 public class SendButton : MonoBehaviour
 {
 
-public Animator animator = null;
+public Animator animatorIF, animatorCN, animatorInsta, animatorARB, animatorShare, animatorYA;
 
 public void Sendanimation() 
 {
-    animator.SetBool("MessageSent", true);
-}
+    animatorIF.SetBool("MessageSent", true);
+    animatorCN.SetBool("CongIN", true);
+    animatorARB.SetBool("ARButtonOn", true);
+    animatorShare.SetBool("ShareIn", false);
+    animatorYA.SetBool("YourAccomplishmentIn", false);
+    animatorInsta.SetBool("InstaButtonOn", true);
 
-
-public void Congratulations() 
-{
-    animator.SetBool("CongIN", true);
-
-
-}
-
-public void FinalButtons() 
-{
-    animator.SetBool("InstaButtonOn", true);
-
-}
-
-public void ARButton() 
-{
-    animator.SetBool("ARButtonOn", true);
-
-}
-
-public void ShareOut() 
-{
-    animator.SetBool("ShareIn", false);
-
-}
-
-public void YourOut() 
-{
-    animator.SetBool("YourIn", false);
 
 }
 

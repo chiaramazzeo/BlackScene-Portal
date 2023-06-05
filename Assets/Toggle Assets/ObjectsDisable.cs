@@ -7,23 +7,24 @@ public class ObjectsDisable : MonoBehaviour
 {
     public GameObject[] objectsToDisable;
 
+    public bool isOn;
+
     void Start()
     {
-        Toggle toggle = GetComponent<Toggle>();
-        toggle.onValueChanged.AddListener(delegate
-        {
-            ToggleValueChanged(toggle);
-        });
+        
     }
 
-    void ToggleValueChanged(Toggle toggle)
+    public void ToggleValueChanged()
     {
-        if (toggle.isOn)
+        if (isOn)
         {
             foreach (GameObject obj in objectsToDisable)
             {
+            Debug.Log("test");
                 obj.SetActive(false);
             }
+            isOn= false;
+            
         }
         else
         {
@@ -31,6 +32,7 @@ public class ObjectsDisable : MonoBehaviour
             {
                 obj.SetActive(true);
             }
+            isOn = true;
         }
     }
 }

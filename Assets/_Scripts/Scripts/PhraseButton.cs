@@ -6,21 +6,13 @@ using UnityEngine.UI;
 public class PhraseButton : MonoBehaviour
 {
 
-public Animator animator = null;
+public Animator animatorIT, animatorSI, animatorYW;
 
-public void InputTextIn() 
+public void AllAnimations() 
 {
-    animator.SetBool("ShareAccomplishment", true);
-}
-
-public void ShareInstruction() 
-{
-    animator.SetBool("ShareIn", true);
-}
-
-public void YourWill() 
-{
-    animator.SetBool("YourIn", true);
+    animatorIT.SetBool("ShareAccomplishment", true);
+    animatorSI.SetBool("ShareIn", true);
+    animatorYW.SetBool("YourAccomplishmentIn", true);
 }
 
 }

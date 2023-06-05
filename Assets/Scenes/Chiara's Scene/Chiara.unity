@@ -236,7 +236,6 @@ GameObject:
   - component: {fileID: 3702150}
   - component: {fileID: 3702149}
   - component: {fileID: 3702153}
-  - component: {fileID: 3702152}
   m_Layer: 5
   m_Name: Share Your Accomplishment
   m_TagString: Untagged
@@ -323,19 +322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3702147}
   m_CullTransparentMesh: 1
---- !u!114 &3702152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3702147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!114 &3702153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIT: {fileID: 0}
+  animatorSI: {fileID: 0}
+  animatorYW: {fileID: 0}
 --- !u!1 &30388426
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,9 +350,8 @@ GameObject:
   - component: {fileID: 30388429}
   - component: {fileID: 30388428}
   - component: {fileID: 30388432}
-  - component: {fileID: 30388431}
   m_Layer: 5
-  m_Name: Your...will
+  m_Name: Your Accomplishment Will
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,7 +387,7 @@ Animator:
   m_GameObject: {fileID: 30388426}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d150652b464b4dde860613d01591629, type: 2}
+  m_Controller: {fileID: 9100000, guid: ad4d264016f084e299d6ed10c9adfab4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -449,19 +436,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30388426}
   m_CullTransparentMesh: 1
---- !u!114 &30388431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30388426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!114 &30388432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIT: {fileID: 0}
+  animatorSI: {fileID: 0}
+  animatorYW: {fileID: 0}
 --- !u!1 &34129666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1157,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172377574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3c5a876a515aee40ab083eaa61f42f1, type: 3}
   m_Name: 
@@ -2506,7 +2482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306620083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3c5a876a515aee40ab083eaa61f42f1, type: 3}
   m_Name: 
@@ -3895,7 +3871,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1403465315}
+  animatorIF: {fileID: 8998598734118685723}
+  animatorCN: {fileID: 1403465315}
+  animatorInsta: {fileID: 1195713064}
+  animatorARB: {fileID: 1291232560}
+  animatorShare: {fileID: 3702149}
+  animatorYA: {fileID: 30388428}
 --- !u!1 &572112897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,7 +3914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.29004}
+  m_AnchoredPosition: {x: 0, y: 0.29003906}
   m_SizeDelta: {x: 270.9037, y: 481.6064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572112899
@@ -11606,7 +11587,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIF: {fileID: 0}
+  animatorCN: {fileID: 0}
+  animatorInsta: {fileID: 0}
+  animatorARB: {fileID: 0}
+  animatorShare: {fileID: 0}
+  animatorYA: {fileID: 0}
 --- !u!1 &1206589052
 GameObject:
   m_ObjectHideFlags: 0
@@ -21713,7 +21699,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIF: {fileID: 0}
+  animatorCN: {fileID: 0}
+  animatorInsta: {fileID: 0}
+  animatorARB: {fileID: 0}
+  animatorShare: {fileID: 0}
+  animatorYA: {fileID: 0}
 --- !u!1001 &1293565764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22133,7 +22124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1345995763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22240,8 +22231,6 @@ GameObject:
   - component: {fileID: 1401885813}
   - component: {fileID: 1401885812}
   - component: {fileID: 1401885816}
-  - component: {fileID: 1401885818}
-  - component: {fileID: 1401885817}
   m_Layer: 5
   m_Name: Phrase 1
   m_TagString: Untagged
@@ -22315,7 +22304,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1401885816}
         m_TargetAssemblyTypeName: PhraseButton, Assembly-CSharp
-        m_MethodName: InputTextIn
+        m_MethodName: AllAnimations
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22341,30 +22330,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1401885816}
-        m_TargetAssemblyTypeName: PhraseButton, Assembly-CSharp
-        m_MethodName: YourWill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1401885816}
-        m_TargetAssemblyTypeName: PhraseButton, Assembly-CSharp
-        m_MethodName: ShareInstruction
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -22444,33 +22409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 8998598734118685723}
---- !u!114 &1401885817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401885810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 30388428}
---- !u!114 &1401885818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401885810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3702149}
+  animatorIT: {fileID: 8998598734118685723}
+  animatorSI: {fileID: 3702149}
+  animatorYW: {fileID: 30388428}
 --- !u!1 &1403465313
 GameObject:
   m_ObjectHideFlags: 0
@@ -23364,7 +23305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1537363300
 AudioListener:
   m_ObjectHideFlags: 0
@@ -23423,7 +23364,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537363299}
-  m_LocalRotation: {x: -0, y: 0.3408284, z: -0, w: 0.9401255}
+  m_LocalRotation: {x: -0, y: -0.008415796, z: -0, w: 0.9999646}
   m_LocalPosition: {x: 0.67, y: 3.13, z: 3.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23431,7 +23372,7 @@ Transform:
   - {fileID: 967878748}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 39.855, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.964, z: 0}
 --- !u!82 &1537363303
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29133,6 +29074,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1767790258}
+        m_TargetAssemblyTypeName: ObjectsDisable, Assembly-CSharp
+        m_MethodName: ToggleValueChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &1767790253
 MonoBehaviour:
@@ -29209,6 +29162,7 @@ MonoBehaviour:
   objectsToDisable:
   - {fileID: 291539221}
   - {fileID: 1899405036}
+  isOn: 1
 --- !u!1001 &1802587564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30041,7 +29995,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIF: {fileID: 0}
+  animatorCN: {fileID: 0}
+  animatorInsta: {fileID: 0}
+  animatorARB: {fileID: 0}
+  animatorShare: {fileID: 0}
+  animatorYA: {fileID: 0}
 --- !u!95 &1878386406
 Animator:
   serializedVersion: 5
@@ -35940,12 +35899,7 @@ GameObject:
   - component: {fileID: 8998598733170245614}
   - component: {fileID: 8998598733170245613}
   - component: {fileID: 8998598733170245612}
-  - component: {fileID: 8998598733170245615}
   - component: {fileID: 562762830}
-  - component: {fileID: 8998598733170245616}
-  - component: {fileID: 8998598733170245617}
-  - component: {fileID: 8998598733170245619}
-  - component: {fileID: 8998598733170245618}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -36019,57 +35973,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8998598734877921138}
-        m_TargetAssemblyTypeName: Survey, Assembly-CSharp
-        m_MethodName: Send
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8998598733170245615}
-        m_TargetAssemblyTypeName: SendButton, Assembly-CSharp
-        m_MethodName: Sendanimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 562762830}
         m_TargetAssemblyTypeName: SendButton, Assembly-CSharp
-        m_MethodName: Congratulations
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8998598733170245616}
-        m_TargetAssemblyTypeName: SendButton, Assembly-CSharp
-        m_MethodName: FinalButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8998598733170245617}
-        m_TargetAssemblyTypeName: SendButton, Assembly-CSharp
-        m_MethodName: ARButton
+        m_MethodName: Sendanimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36117,71 +36023,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8998598733170245610}
   m_CullTransparentMesh: 1
---- !u!114 &8998598733170245615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998598733170245610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 8998598734118685723}
---- !u!114 &8998598733170245616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998598733170245610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1195713064}
---- !u!114 &8998598733170245617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998598733170245610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1291232560}
---- !u!114 &8998598733170245618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998598733170245610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 30388428}
---- !u!114 &8998598733170245619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998598733170245610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3702149}
 --- !u!1 &8998598733557437332
 GameObject:
   m_ObjectHideFlags: 0
@@ -36690,7 +36531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff580ee22878e4a31913aeb29953664e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIF: {fileID: 0}
+  animatorCN: {fileID: 0}
+  animatorInsta: {fileID: 0}
+  animatorARB: {fileID: 0}
+  animatorShare: {fileID: 0}
+  animatorYA: {fileID: 0}
 --- !u!114 &8998598734118685725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36703,7 +36549,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406906e3ac247416489bc1fbf9861bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animatorIT: {fileID: 0}
+  animatorSI: {fileID: 0}
+  animatorYW: {fileID: 0}
 --- !u!1 &8998598734214174507
 GameObject:
   m_ObjectHideFlags: 0
