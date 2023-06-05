@@ -10,7 +10,7 @@ public Animator animatorIT, animatorSI, animatorYW;
 
 public void AllAnimations() 
 {
-    animatorIT.SetBool("ShareAccomplishment", true);
+    animatorIT.SetBool("InputText", true);
     animatorSI.SetBool("ShareIn", true);
     animatorYW.SetBool("YourAccomplishmentIn", true);
 }

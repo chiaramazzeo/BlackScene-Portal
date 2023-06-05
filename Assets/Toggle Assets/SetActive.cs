@@ -10,6 +10,9 @@ public class SetActive : MonoBehaviour
     public GameObject Congratulations;
     public GameObject InstagramButton;
     public GameObject ARButton;
+    public GameObject ShareAccomplishment;
+    public GameObject YourAccomplishmentObj;
+
     public Toggle toggle;
 
     void Start()
@@ -28,6 +31,9 @@ public class SetActive : MonoBehaviour
             Congratulations.SetActive(true);
             InstagramButton.SetActive(true);
             ARButton.SetActive(true);
+            ShareAccomplishment.SetActive(true);
+            YourAccomplishmentObj.SetActive(true);
+
 
         }
         else
@@ -37,6 +43,11 @@ public class SetActive : MonoBehaviour
             Congratulations.SetActive(false);
             InstagramButton.SetActive(false);
             ARButton.SetActive(false);
+            ShareAccomplishment.SetActive(false);
+            YourAccomplishmentObj.SetActive(false);
+    
+            
+
 
 
         }
