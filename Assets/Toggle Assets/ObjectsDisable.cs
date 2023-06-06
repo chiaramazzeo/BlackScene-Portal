@@ -5,34 +5,26 @@ using UnityEngine.UI;
 
 public class ObjectsDisable : MonoBehaviour
 {
-    public GameObject[] objectsToDisable;
-
-    public bool isOn;
+    public GameObject element;
+    public Toggle toggle;
 
     void Start()
     {
-        
+        toggle.onValueChanged.AddListener(delegate {
+            ToggleValueChanged(toggle);
+        });
     }
 
-    public void ToggleValueChanged()
+    void ToggleValueChanged(Toggle toggle)
     {
-        if (isOn)
+        if (toggle.isOn)
         {
-            foreach (GameObject obj in objectsToDisable)
-            {
-            Debug.Log("test");
-                obj.SetActive(false);
-            }
-            isOn= false;
-            
+            element.SetActive(false); // Set the element to true if the toggle is on
         }
         else
         {
-            foreach (GameObject obj in objectsToDisable)
-            {
-                obj.SetActive(true);
-            }
-            isOn = true;
+            element.SetActive(true); // Set the element to false if the toggle is off
         }
     }
+
 }

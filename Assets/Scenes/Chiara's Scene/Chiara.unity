@@ -676,6 +676,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.027837247, y: 0.026979355, z: 0.008980288}
   m_Center: {x: 0.00041374005, y: -0.0007537186, z: -0.00067899324}
+--- !u!114 &60558993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60558988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: {fileID: 60558988}
+  toggle: {fileID: 1767790251}
 --- !u!1 &63290250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2159,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008952938, y: 0.007820943, z: 0.01866948}
   m_Center: {x: 7.3969963e-10, y: 0.0000000025897369, z: 0.00014111587}
+--- !u!114 &425905127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425905120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: {fileID: 425905120}
+  toggle: {fileID: 1767790251}
 --- !u!1 &434484889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3168,6 +3196,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5256515, y: 5.2360983, z: 2.3286657}
   m_Center: {x: -0.09479939, y: -0.3246665, z: 0.6643332}
+--- !u!114 &695066151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695066146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: {fileID: 695066146}
+  toggle: {fileID: 1767790251}
 --- !u!1001 &708531282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9143,6 +9185,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4551677, y: 1.4551675, z: 1.9107069}
   m_Center: {x: 0.00000002980232, y: 0, z: -0.000097304575}
+--- !u!114 &1040186263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040186257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: {fileID: 1040186257}
+  toggle: {fileID: 1767790251}
 --- !u!1001 &1049783677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26990,7 +27046,6 @@ GameObject:
   - component: {fileID: 1767790253}
   - component: {fileID: 1767790255}
   - component: {fileID: 1767790257}
-  - component: {fileID: 1767790258}
   m_Layer: 5
   m_Name: Switch Toggle
   m_TagString: Untagged
@@ -27090,7 +27145,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1767790258}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ObjectsDisable, Assembly-CSharp
         m_MethodName: ToggleValueChanged
         m_Mode: 1
@@ -27165,25 +27220,6 @@ MonoBehaviour:
   ShareAccomplishment: {fileID: 3702147}
   YourAccomplishmentObj: {fileID: 30388426}
   toggle: {fileID: 1767790251}
---- !u!114 &1767790258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767790249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToDisable:
-  - {fileID: 1040186257}
-  - {fileID: 60558988}
-  - {fileID: 695066146}
-  - {fileID: 1888126563}
-  - {fileID: 425905120}
-  isOn: 1
 --- !u!1 &1816388792
 GameObject:
   m_ObjectHideFlags: 0
@@ -28116,6 +28152,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.024651842, y: 0.018577483, z: 0.025990916}
   m_Center: {x: 0.011022198, y: 0.00043619276, z: -0.0036380964}
+--- !u!114 &1888126569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888126563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a04f2be39dca48a7db2768830484f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: {fileID: 1888126563}
+  toggle: {fileID: 1767790251}
 --- !u!1 &1909983530
 GameObject:
   m_ObjectHideFlags: 0
