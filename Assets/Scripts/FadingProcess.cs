@@ -72,24 +72,39 @@ public class FadingProcess : MonoBehaviour
             isImage2Faded = true;
         }
 
-        if (!isImage3Faded && isImage2Faded)
+        if(!isImage3Faded && isImage2Faded)
         {
-            // Activate the third image
+            // Activate the second image
             image3.gameObject.SetActive(true);
 
-            StartCoroutine(FadeRawImage(image3, true)); // Start fading in the third and fourth images simultaneously
+            yield return StartCoroutine(FadeRawImage(image3, true)); // Fade in the third image
 
             // Wait for the fade-in to finish
-            yield return new WaitForSeconds(fadeDuration);
+            yield return new WaitForSeconds(delay);
 
-            StartCoroutine(FadeRawImage(image3, false)); // Start fading out the third and fourth images simultaneously
-
-            // Wait for the fade-out to finish
-            yield return new WaitForSeconds(fadeDuration);
-
+            yield return StartCoroutine(FadeRawImage(image3, false)); // Fade out the third image
 
             isImage3Faded = true;
         }
+
+        //if (!isImage3Faded && isImage2Faded)
+        //{
+        //    // Activate the third image
+        //    image3.gameObject.SetActive(true);
+
+        //    StartCoroutine(FadeRawImage(image3, true)); // Start fading in the third and fourth images simultaneously
+
+        //    // Wait for the fade-in to finish
+        //    yield return new WaitForSeconds(fadeDuration);
+
+        //    StartCoroutine(FadeRawImage(image3, false)); // Start fading out the third and fourth images simultaneously
+
+        //    // Wait for the fade-out to finish
+        //    yield return new WaitForSeconds(fadeDuration);
+
+
+        //    isImage3Faded = true;
+        //}
     }
 
     private IEnumerator FadeTwoImages(Image image1, Image image2, bool fadeIn)
